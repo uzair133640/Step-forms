@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .parent{
+            display: flex;
+            margin: 20px;
+            
+        }
+        .child{
+            font-size: 20px;
+            font-weight: bold;
+            padding: 12px;
+        }
+        .green{
+            background-color: rgb(89, 233, 89);
+        }
+        .green{
+            background-color: rgb(89, 233, 89);
+        }
+        .blue{
+            background-color: rgb(0, 140, 255);
+        }
+        
+        .field{
+            border: 2px solid gray;
+            width: 550px;
+            margin-left: 23px;
+        }
+        .border{
+            border:1px solid lightgray;
+            width: 400px;
+        }
+        
+     
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child green">Step 1: Account</div>
+        <div class="child green">Step 2: Personal Details</div>
+        <div class="child blue">Step 3: Your Review</div>
+    </div>
+ <br>
+    <form action="">
+        <fieldset class="field">
+            <legend><b>Your Review: </b></legend>
+            <br>
+            <label for="option"><b>How did you hear about us? </b></label>
+            <select  id="option" name="option" multiple size="1">
+                 <option value="" >Select your option</option>
+                 <option value="friend">Friends</option>
+                 <option value="fb">Facebook</option>
+                 <option value="social_media">Social Media</option>
+                 <option value="search_engine">Search Engine</option>
+
+            </select><br><br>
+
+            <label for="radio"><b>Would you visit again?</b> </label><br>
+            <input  type="radio" id="yes" value="yes" name="answer">
+            <label for="yes"><b>Yes</b></label>
+            <input  type="radio" id="no" value="no" name="answer">
+            <label for="yes"><b>No</b></label>
+            <input  type="radio" id="maybe" value="maybe" name="answer" >
+            <label for="yes"><b>Maybe</b></label>
+<br><br>
+            <label for="comments"><b>Comments:</b> </label><br>
+            <textarea  id="comments" placeholder="Enter your comments here..." rows="5" cols="40"></textarea>
+            <br><br>
+
+            <label for="file"><b>Documents: </b></label><br>
+            <input type="file"  id="file">
+<br><br>
+
+            <input type="checkbox"  id="check">
+            <label for="check"><b>Sign me up for email updates</b></label><br><br>
+          <a href="step-2.html"><img src="./Assets/back.png" width="100px"></a>
+            <a href="index.html"><img src="./Assets/next.png" width="100px"></a>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
